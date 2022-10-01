@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Students survey form Survey Form </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="a.css" rel="stylesheet">
+    </head>
+    <body>
+          <form id="survey-form" action="https://survey-form.freecodcamp.rocks">
+      <div class="form">
+        <header>
+          <fieldset>
+          <h1 id="title"> freeCodeCamp <br> Survey Form </h1>
+          <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form>
+      <div class="info">
+        <label id="name-label" for="student-name"> Name: <input type="text" id="name" placeholder="Enter your name" required /> </label>
+        </div>
+        <div class="info">
+        <label id="email-label" for="email">Email: <input type="email" id="email"placeholder="Enter your email" id="email" required /></label>
+        </div>
+        <div>
+          <label id="number-label" for="student-age">Age <input type="number" id="number" name="age" min="10" max="100" placeholder="Age" required /></label>
+        </div>
+        <fieldset>
+            <label>
+            Which Option best describes your current role
+            </label>
+            <select class="new" id="dropdown" name="referrer">
+              <option value="">Select an option</option>
+              <option value="1">Student</option>
+              <option value="2">Full Time Job</option>
+              <option value="3">Full Time Learner</option>
+              <option value="4">Other</option>
+            </select>
+        </fieldset>
+            <fieldset>
+               <label> Would you recommend freeCodeCamp to a friend?</label>
+               <label><input type="radio" name="account-type" class="inline" value="Definitely" /> Definitely</label>
+               <label><input type="radio" name="account-type" class="inline" value="Maybe" /> Maybe</label>
+               <label><input type="radio" name="account-type" class="inline" value="Not sure /"> Not Sure</label>
+            </fieldset>
+            <fieldset>
+                <label> What is your favourite feature of freeCodeCamp?
+                    <select name="places">
+                        <option value=""> Select an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <form>
+                    <h5> Would you like to see improved? (check all that apply) </h5>
+                    <label for="type1"> <input type="checkbox" name="type1" value="Front-end Projects" class="inline" /> Front-end project</label>
+                    <label for="type2"> <input type="checkbox" name="type2" value="Back-end Projects" class="inline" /> Back-end Projects</label>
+                    <label for="type3"> <input type="checkbox" name="type3" value="Dat Visualization" class="inline" /> Data Visualization</label>
+                    <label for="type4"> <input type="checkbox" name="type4" value="Challenges" class="inline" /> Challenges</label>
+                    <label for="type5"> <input type="checkbox" name="type5" value="Open Source Community" class="inline" /> Open Source Community</label>
+                    <label for="type6"> <input type="checkbox" name="type6" value="Gitter rooms" class="inline" /> Gitter help rooms</label>
+                    <label for="type7"> <input type="checkbox" name="type7" value="Videos" class="inline" /> Videos</label>
+                    <label for="type8"> <input type="checkbox" name="type8" value="City Meetups" class="inline" /> City Meetups</label>
+                    <label for="type9"> <input type="checkbox" name="type9" value="Wiki" class="inline" />Wiki</label>
+                    <label for="type10"> <input type="checkbox" name="type10" value="Forum" class="inline">Forum</label>
+                    <label for="type11"> <input type="checkbox" name="type11" value="Additional Courses" class="inline"> Additional Courses</label>
+                </form>
+            </fieldset>
+            <fieldset>
+              <label> Any Comments or Suggestions </label>
+              <textarea name="bio" rows="3" columns="50" placeholder="Your answer"></textarea>
+            </fieldset>
+            <input id="submit" type="Submit" value="Submit">
+        </form>
+      </body>
+  </html>
+
+  
